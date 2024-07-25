@@ -1,0 +1,19 @@
+.abcd {
+    color: blue;
+}
+
+.body {
+    background: #003ecb;
+    color: aliceblue;
+    height:auto;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+    resize: both;
+}
+
+.header {
+    background-color: #fba61b;
+}

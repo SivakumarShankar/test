@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import React from "react";
+import { } from "../pages/styles.css"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -7,7 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const Layout = () => {
   return (
     <>
-      <nav class="navbar bg-light">
+      <nav class="navbar header">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             Sivakumar Profile
