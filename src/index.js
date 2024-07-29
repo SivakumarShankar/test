@@ -7,6 +7,7 @@ import Layout from "./pages/layout";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import NoPage from "./pages/error";
+import Footer from "./pages/footer"
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="footer" element={<Footer />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

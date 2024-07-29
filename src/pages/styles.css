@@ -1,12 +1,47 @@
-.abcd {
-    color: blue;
-}
+/* ------------ CSS for all the file in this project--------------*/
 
 .body {
     background: #003ecb;
     color: aliceblue;
-    height:auto;
+    height:100%;
+    width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.abcd {
+    background: #fba61b;
+    padding: 0%;
+}
+
+.circleBase {
+    border-radius: 50%; /* remove if you don't care about IE8 */
+}
+
+.type3 {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    border: 5px solid #003ecb;
+}
+
+.container1 {
+    width: 100%;
+
+}
+
+.type3:hover {
+    border: 5px solid #fba61b;
 }
 
 .image {
@@ -25,12 +60,34 @@
     background-color: #fba61b;
 }
 
+.btn-custom {
+    background-color: #fba61b;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.btn-custom:hover {
+    background-color: #003ecb;
+    font-weight: bolder;
+    color: #fba61b;
+    border: 2px solid #fba61b;
+}
+
+.text-yellow {
+    color: #fba61b;
+}
+
+.abbb {
+    justify-content: center;
+}
+
 
 .row1 {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     color: black;
+    width: 100%;
     
 }
 

@@ -10,7 +10,7 @@ const Layout = () => {
     <>
       <nav class="navbar header">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://google.com">
             Sivakumar Profile
           </a>
           <button
