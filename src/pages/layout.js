@@ -10,9 +10,7 @@ const Layout = () => {
     <>
       <nav class="navbar header">
         <div class="container-fluid">
-          <a class="navbar-brand" href="https://google.com">
-            Sivakumar Profile
-          </a>
+          <Link to="/" class="navbar-brand">Sivakumar Profile</Link>
           <button
             class="navbar-toggler"
             type="button"
