@@ -9,7 +9,7 @@ import Footer from "./footer";
 const Home = () => {
   return (
     <div class="body">
-      <div class="text-center">
+      <div class="text-center pt-5">
         <h4 class="lh-base pt-5">HELLO EVERYONE, I AM</h4>
         <h1 class="name lh-base">Sivakumar Shankar Kumar</h1>
         <h3 class="col-md-6 offset-md-3 lh-base pb-5">

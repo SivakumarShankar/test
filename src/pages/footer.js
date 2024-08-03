@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div>
       <footer class="text-center text-lg-start bg-body-tertiary text-muted bg-warning">
-        <section class="d-flex container justify-content-lg-between pt-4 bg-warning">
+        <section class="d-flex container-fluid justify-content-lg-between pt-4 bg-warning">
           <div class="me-5 d-none d-lg-block">
             <h6 class="fw-bold mb-4">
               CONTACT :{""}

@@ -8,7 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const Layout = () => {
   return (
     <>
-      <nav class="navbar header">
+      <nav class="navbar header fixed-top">
         <div class="container-fluid">
           <Link to="/" class="navbar-brand">Sivakumar Profile</Link>
           <button
@@ -45,7 +45,7 @@ const Layout = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li class="navbar-nav mr-auto nav-item nav-link">
-                <Link to="/error">Error</Link>
+                <Link to="/github">Github</Link>
               </li>
             </div>
           </div>
