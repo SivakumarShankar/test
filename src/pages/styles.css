@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+.text-blue {
+    color: #003ecb;
+}
+
+
 html, body {
     margin: 0;
     height: 100%;
