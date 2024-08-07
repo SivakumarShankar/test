@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Footer from "./footer";
 import AnimatedCard from "./animatedcard";
 import "../pages/animation.css";
+import CountUp from "react-countup";
 
 const Home = () => {
   return (
@@ -34,28 +35,40 @@ const Home = () => {
       <div class="row1 col-md-3">
         <div class="container my-4 p-0">
           <div class="row container-fluid px-0 my-3 ">
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-center fw-bold">
               <Link
                 to="/files/SivakumarShankarResume.pdf"
-                class="circleBase type3"
+                class="circleBase type3 text-blue"
                 target="_blank"
-                style={{ textDecoration: "none", color: "black" }}
+                style={{ textDecoration: "none"}}
                 download
               >
                 Resume
               </Link>
             </div>
-            <div class="col d-flex justify-content-center">
-              <div class="circleBase type3">My Skills</div>
+            <div class="col d-flex justify-content-center fw-bold">
+              <Link
+                to="/skills"
+                class="circleBase type3 text-yellow"
+                style={{ textDecoration: "none"}}
+              >
+                Skills
+              </Link>
             </div>
-            <div class="col d-flex justify-content-center">
-              <div class="circleBase type3">Project</div>
+            <div class="col d-flex justify-content-center fw-bold">
+              <Link
+                to="/project"
+                class="circleBase type3 text-blue"
+                style={{ textDecoration: "none"}}
+              >
+                Project
+              </Link>
             </div>
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-center fw-bold">
               <Link
                 to="/contact"
-                class="circleBase type3"
-                style={{ textDecoration: "none", color: "black" }}
+                class="circleBase type3 text-yellow"
+                style={{ textDecoration: "none"}}
               >
                 Contact
               </Link>
@@ -70,19 +83,22 @@ const Home = () => {
               <AnimatedCard>
                 <div className="card-container">
                   <h1 class="card-title fw-bolder text-yellow">01</h1>
-                  <h3 className="text-blue">Innovative</h3>
+                  <h4 className="text-blue">Innovative</h4>
                   <p class="card-text">
                     With a knack for developing innovative full-stack web
                     applications, I leverage technologies like React.js and
                     Node.js to create efficient, scalable solutions that enhance
                     user experience and performance.
                   </p>
-                  <a
-                    href="https://google.com"
-                    class="btn btn-custom text-capitalize"
-                  >
-                    MORE
-                  </a>
+
+                  <li class="btn btn-custom text-capitalize">
+                    <Link
+                      to="/skills"
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      MORE
+                    </Link>
+                  </li>
                 </div>
               </AnimatedCard>
             </div>
@@ -90,19 +106,21 @@ const Home = () => {
               <AnimatedCard>
                 <div className="card-container">
                   <h1 class="card-title fw-bolder text-yellow">02</h1>
-                  <h3 className="text-blue">Collaborative</h3>
+                  <h4 className="text-blue">Collaborative</h4>
                   <p class="card-text">
                     Experienced in working with cross-functional teams, I excel
                     in collaborative environments, ensuring seamless
                     communication and effective project delivery, as
                     demonstrated in my roles as a developer.
                   </p>
-                  <a
-                    href="https://google.com"
-                    class="btn btn-custom text-capitalize"
-                  >
-                    MORE
-                  </a>
+                  <li class="btn btn-custom text-capitalize">
+                    <Link
+                      to="/skills"
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      MORE
+                    </Link>
+                  </li>
                 </div>
               </AnimatedCard>
             </div>
@@ -110,19 +128,21 @@ const Home = () => {
               <AnimatedCard>
                 <div className="card-container">
                   <h1 class="card-title fw-bolder text-yellow">03</h1>
-                  <h3 className="text-blue">Adaptive</h3>
+                  <h4 className="text-blue">Adaptive</h4>
                   <p class="card-text">
                     Thriving in dynamic startup settings, I quickly adapt to new
                     challenges, driving rapid development cycles and delivering
                     impactful solutions, particularly in cloud-based (Amazon Web
                     Services) and automation projects.
                   </p>
-                  <a
-                    href="https://google.com"
-                    class="btn btn-custom text-capitalize"
-                  >
-                    MORE
-                  </a>
+                  <li class="btn btn-custom text-capitalize">
+                    <Link
+                      to="/skills"
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      MORE
+                    </Link>
+                  </li>
                 </div>
               </AnimatedCard>
             </div>
@@ -130,19 +150,21 @@ const Home = () => {
               <AnimatedCard>
                 <div className="card-container">
                   <h1 class="card-title fw-bolder text-yellow">04</h1>
-                  <h3 className="text-blue">Detail-Oriented</h3>
+                  <h4 class="text-blue">Detail-Oriented</h4>
                   <p class="card-text">
                     My meticulous attention to detail ensures high-quality code
                     and robust system performance. I consistently implement best
                     practices and conduct thorough code reviews to maintain and
                     improve development standards.
                   </p>
-                  <a
-                    href="https://google.com"
-                    class="btn btn-custom text-capitalize"
-                  >
-                    MORE
-                  </a>
+                  <li class="btn btn-custom text-capitalize">
+                    <Link
+                      to="/skills"
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      MORE
+                    </Link>
+                  </li>
                 </div>
               </AnimatedCard>
             </div>
@@ -150,9 +172,78 @@ const Home = () => {
         </div>
       </div>
 
+      {/* End of Card */}
+
+
+
+
+
+
+
+      <div class="container-fluid pt-5 pb-5">
+        <div class="container d-flex">
+        <div class="left-column">
+            <h5>NAME</h5>
+            <p class="fw-bold">Sivakumar</p>
+            <h5>BIRTHDAY</h5>
+            <p class="fw-bold">11.03.1997</p>
+            <h5>ROLE</h5>
+            <p class="fw-bold">Software Developer</p>
+            <h5>EMAIL</h5>
+            <p class="fw-bold">sibisiva17@gmail.com</p>
+            <h5>PHONE</h5>
+            <p class="fw-bold">(+44) 7424 972701</p>
+            <h5>WEBSITE</h5>
+            <p class="fw-bold">sivakumarshankarkumar.com</p>
+            <h5>LOCATION</h5>
+            <p class="fw-bold">London, UK</p>
+            <h5>INTEREST</h5>
+            <p class="fw-bold">Movies, Games</p>
+            <h5>SOCIAL</h5>
+            <p class="fw-bold">fb,twiter,linkedin</p>
+        </div>
+        <div class="right-column text-dark">
+            <div class="box">
+                <p>Box 1</p>
+                <div class="box-text"><CountUp end={100} duration={10}></CountUp></div>
+            </div>
+            <div class="box">
+                <p>Box 2</p>
+                <div class="box-text">Text below Box 2</div>
+            </div>
+            <div class="box">
+                <p>Box 3</p>
+                <div class="box-text">Text below Box 3</div>
+            </div>
+            <div class="box">
+                <p>Box 4</p>
+                <div class="box-text">Text below Box 4</div>
+            </div>
+        </div>
+        </div>
+       
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
       <Footer />
     </div>
   );
 };
+
+
 
 export default Home;

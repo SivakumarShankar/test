@@ -32,6 +32,6 @@
   .card-container:hover {
     
   transform: rotate(360deg);
-  transition: width 1s, height 1s, transform 1s;
+  transition: width 0.1s, height 0.1s, transform 0.1s;
   }
   

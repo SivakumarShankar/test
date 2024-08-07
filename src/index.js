@@ -8,7 +8,9 @@ import Home from "./pages/home";
 import Contact from "./pages/contact";
 import NoPage from "./pages/error";
 import Footer from "./pages/footer";
-import Github from "./pages/github"
+import Github from "./pages/github";
+import Skills from "./pages/skills";
+import Project from "./pages/project";
 
 export default function App() {
   return (
@@ -18,8 +20,9 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="footer" element={<Footer />} />
-
           <Route path="github" element={<Github />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="project" element={<Project />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

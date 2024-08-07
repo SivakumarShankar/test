@@ -10,7 +10,7 @@ const Layout = () => {
     <>
       <nav class="navbar header fixed-top">
         <div class="container-fluid">
-          <Link to="/" class="navbar-brand">Sivakumar Profile</Link>
+          <Link to="/" class="navbar-brand fw-bolder">Sivakumar Profile</Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -39,13 +39,16 @@ const Layout = () => {
             </div>
             <div class="offcanvas-body">
               <li class="navbar-nav mr-auto nav-item nav-link">
-                <Link to="/">Home</Link>
+                <Link to="/" style={{ textDecoration: "none", color: "black" }}>Home</Link>
               </li>
               <li class="navbar-nav mr-auto nav-item nav-link">
-                <Link to="/contact">Contact</Link>
+                <Link to="/skills" style={{ textDecoration: "none", color: "black" }}>Skills</Link>
               </li>
               <li class="navbar-nav mr-auto nav-item nav-link">
-                <Link to="/github">Github</Link>
+                <Link to="/github" style={{ textDecoration: "none", color: "black" }}>Website Info</Link>
+                </li>
+              <li class="navbar-nav mr-auto nav-item nav-link">
+                <Link to="/contact" style={{ textDecoration: "none", color: "black" }}>Contact</Link>
               </li>
             </div>
           </div>

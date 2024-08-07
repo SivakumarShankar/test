@@ -28,7 +28,7 @@ const GitHubCommits = () => {
     }, );
 
     return (
-        <div class="">
+        <div class="container-fluid">
         <div style={styles.container}>
             <h2 style={styles.heading}>GitHub Commits</h2>
             {/* {error && <p style={styles.error}>{error}</p>} */}
