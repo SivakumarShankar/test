@@ -11,6 +11,7 @@ import Footer from "./pages/footer";
 import Github from "./pages/github";
 import Skills from "./pages/skills";
 import Project from "./pages/project";
+import Admin from "./pages/admin";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="github" element={<Github />} />
           <Route path="skills" element={<Skills />} />
           <Route path="project" element={<Project />} />
+          <Route path="admin" element={<Admin />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

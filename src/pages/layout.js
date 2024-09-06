@@ -8,7 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const Layout = () => {
   return (
     <>
-      <nav class="navbar header fixed-top">
+      <nav class="navbar header">
         <div class="container-fluid">
           <Link to="/" class="navbar-brand fw-bolder">Sivakumar Profile</Link>
           <button
@@ -22,7 +22,7 @@ const Layout = () => {
           </button>
           <div
             class="offcanvas offcanvas-end"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >

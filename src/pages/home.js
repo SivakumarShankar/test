@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./profilecopy.png";
+import awsimage from "../images/aws.png";
 import {} from "../pages/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -200,22 +201,22 @@ const Home = () => {
                 <SocialIcon
                   url="https://www.linkedin.com/in/sivakumarshankarkumar/"
                   target="_blank"
-                  style={{ height: 35, width: 35}}
+                  style={{ height: 35, width: 35 }}
                 />
                 <SocialIcon
                   url="https://www.instagram.com/sivakumar_shankar?igsh=MWRhczd1MjR4MHoxNg%3D%3D&utm_source=qr"
                   target="_blank"
-                  style={{ height: 35, width: 35}}
+                  style={{ height: 35, width: 35 }}
                 />
                 <SocialIcon
                   url="https://api.whatsapp.com/send?phone=7424972701"
                   target="_blank"
-                  style={{ height: 35, width: 35,}}
+                  style={{ height: 35, width: 35 }}
                 />
                 <SocialIcon
                   url="https://www.facebook.com/share/oCnmyzzgGFsKe68x/?mibextid=LQQJ4d"
                   target="_blank"
-                  style={{ height: 35, width: 35,}}
+                  style={{ height: 35, width: 35 }}
                 />
               </p>
               <h5>NATIONALITY</h5>
@@ -307,6 +308,120 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+        <div class="container d-flex justify-content-center flex-wrap pb-5" >
+          <div class="row pb-3 ">
+            <div class="col d-block">
+              <img
+                src={awsimage}
+                class="image rounded-circle"
+                alt="Snow"
+              />
+            </div>
+            <div class="col">
+              <img
+                src={awsimage}
+                class="image"
+                alt="Snow"
+              />
+            </div>
+            <div class="col">
+              <img
+                src={awsimage}
+                class="image rounded-circle"
+                alt="Snow"
+              />
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col">
+              <img
+                src={logo}
+                class="image"
+                alt="Snow"
+              />
+            </div>
+            <div class="col">
+              <img
+                src={logo}
+                class="image rounded-circle"
+                alt="Snow"
+              />
+            </div>
+            <div class="col">
+              <img
+                src={logo}
+                class="image"
+                alt="Snow"
+              />
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div class="image-row container pb-3"> 
+  <div class="image-column">
+    <img src="https://www.w3schools.com/w3images/wedding.jpg"/>
+    <img src="https://www.w3schools.com/w3images/rocks.jpg"/>
+    <img src="https://www.w3schools.com/w3images/falls2.jpg" />
+    <img src="https://www.w3schools.com/w3images/paris.jpg" />
+    <img src="https://www.w3schools.com/w3images/nature.jpg"  />
+    <img src="https://www.w3schools.com/w3images/mist.jpg" />
+    <img src="https://www.w3schools.com/w3images/paris.jpg"  />
+  </div>
+  <div class="image-column">
+    <img src="https://www.w3schools.com/w3images/underwater.jpg" />
+    <img src="https://www.w3schools.com/w3images/ocean.jpg"  />
+    <img src="https://www.w3schools.com/w3images/wedding.jpg" />
+    <img src="https://www.w3schools.com/w3images/mountainskies.jpg" />
+    <img src="https://www.w3schools.com/w3images/rocks.jpg"  />
+    <img src="https://www.w3schools.com/w3images/underwater.jpg" />
+  </div>  
+  <div class="image-column">
+    <img src="https://www.w3schools.com/w3images/wedding.jpg"/>
+    <img src="https://www.w3schools.com/w3images/rocks.jpg"/>
+    <img src="https://www.w3schools.com/w3images/falls2.jpg" />
+    <img src="https://www.w3schools.com/w3images/paris.jpg" />
+    <img src="https://www.w3schools.com/w3images/nature.jpg"  />
+    <img src="https://www.w3schools.com/w3images/mist.jpg" />
+    <img src="https://www.w3schools.com/w3images/paris.jpg"  />
+  </div>
+  <div class="image-column">
+    <img src="https://www.w3schools.com/w3images/underwater.jpg" />
+    <img src="https://www.w3schools.com/w3images/ocean.jpg"  />
+    <img src="https://www.w3schools.com/w3images/wedding.jpg" />
+    <img src="https://www.w3schools.com/w3images/mountainskies.jpg" />
+    <img src="https://www.w3schools.com/w3images/rocks.jpg"  />
+    <img src="https://www.w3schools.com/w3images/underwater.jpg" />
+  </div>
+</div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <Footer />
     </div>

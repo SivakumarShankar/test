@@ -30,8 +30,7 @@
   }
   
   .card-container:hover {
-    
-  transform: rotate(360deg);
+  /* opacity: 10%; */
   transition: width 0.1s, height 0.1s, transform 0.1s;
   }
   

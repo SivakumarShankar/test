@@ -1,7 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
-import Contact from './pages/contact';
 import Footer from './pages/footer';
 
 
