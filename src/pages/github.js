@@ -3,8 +3,7 @@ import Footer from "./footer";
 
 const GitHubCommits = () => {
     const [commits, setCommits] = useState([]);
-    const [setError] = useState(null);
-    //const [error, setError] = useState(null);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchCommits = async () => {
@@ -25,26 +24,26 @@ const GitHubCommits = () => {
         };
 
         fetchCommits();
-    }, );
+    }, []); // Empty dependency array ensures the effect runs only once
 
     return (
-        <div class="container-fluid">
-        <div style={styles.container}>
-            <h2 style={styles.heading}>GitHub Commits</h2>
-            {/* {error && <p style={styles.error}>{error}</p>} */}
-            <ul style={styles.list}>
-                {commits.map((commit) => (
-                    <li key={commit.sha} style={styles.listItem}>
-                        <p><strong>Message:</strong> {commit.commit.message}</p>
-                        <p><strong>Date:</strong> {new Date(commit.commit.committer.date).toLocaleString()} BST</p>
-                        <p><strong>Author:</strong> {commit.commit.committer.name}</p>
-                        <p><strong>Location:</strong> London, United Kingdom</p>
-                    </li>
-                ))}
-            </ul>
-            <p class="fst-italic">Note: These data are fetch from my <a class="link-opacity-75-hover text-decoration-none" target='_blank' rel='noreferrer' href="https://github.com/SivakumarShankar/test">GitHub</a> repository using API</p>
-        </div>
-        <Footer />
+        <div className="container-fluid">
+            <div style={styles.container}>
+                <h2 style={styles.heading}>GitHub Commits</h2>
+                {error && <p style={styles.error}>{error}</p>}
+                <ul style={styles.list}>
+                    {commits.map((commit) => (
+                        <li key={commit.sha} style={styles.listItem}>
+                            <p><strong>Message:</strong> {commit.commit.message}</p>
+                            <p><strong>Date:</strong> {new Date(commit.commit.committer.date).toLocaleString()} BST</p>
+                            <p><strong>Author:</strong> {commit.commit.committer.name}</p>
+                            <p><strong>Location:</strong> London, United Kingdom</p>
+                        </li>
+                    ))}
+                </ul>
+                <p className="fst-italic">Note: These data are fetched from my <a className="link-opacity-75-hover text-decoration-none" target='_blank' rel='noreferrer' href="https://github.com/SivakumarShankar/test">GitHub</a> repository using API</p>
+            </div>
+            <Footer />
         </div>
     );
 };

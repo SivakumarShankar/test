@@ -1,55 +1,115 @@
 import { Outlet, Link } from "react-router-dom";
 import React from "react";
-import { } from "../pages/styles.css"
-
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import { Offcanvas } from "bootstrap"; // Import Offcanvas from Bootstrap
 
 const Layout = () => {
+  const closeOffcanvas = () => {
+    try {
+      const offcanvas = document.querySelector(".offcanvas.show");
+      if (offcanvas) {
+        // Use Bootstrap's Offcanvas instance to hide the component
+        const bootstrapOffcanvas = Offcanvas.getInstance(offcanvas) || new Offcanvas(offcanvas);
+        bootstrapOffcanvas.hide();
+  
+        // Manually remove any leftover backdrop
+        const backdrops = document.querySelectorAll(".offcanvas-backdrop");
+        backdrops.forEach((backdrop) => backdrop.remove());
+  
+        // Reset body styles for overflow and padding
+        document.body.style.overflow = "";
+        document.body.style.paddingRight = "";
+  
+        // Remove offcanvas-open class from the body
+        document.body.classList.remove("offcanvas-open");
+        
+        // Make sure the modal-open class (if any) is also removed
+        document.body.classList.remove("modal-open");
+      }
+    } catch (error) {
+      console.error("Error closing the offcanvas:", error);
+    }
+  };
+  
+  
+
   return (
     <>
-      <nav class="navbar header">
-        <div class="container-fluid">
-          <Link to="/" class="navbar-brand fw-bolder">Sivakumar Profile</Link>
+      <nav className="navbar header sticky-top">
+        <div className="container-fluid">
+          <Link to="/" className="navbar-brand fw-bolder">
+            Sivakumar Profile
+          </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            class="offcanvas offcanvas-end"
+            className="offcanvas offcanvas-end"
             tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
+            style={{ backgroundColor: "#fba61b" }}
           >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <div className="offcanvas-header">
+              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                 Options
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
-              <li class="navbar-nav mr-auto nav-item nav-link">
-                <Link to="/" style={{ textDecoration: "none", color: "black" }}>Home</Link>
-              </li>
-              <li class="navbar-nav mr-auto nav-item nav-link">
-                <Link to="/skills" style={{ textDecoration: "none", color: "black" }}>Skills</Link>
-              </li>
-              <li class="navbar-nav mr-auto nav-item nav-link">
-                <Link to="/github" style={{ textDecoration: "none", color: "black" }}>Website Info</Link>
+            <div className="offcanvas-body">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link
+                    to="/"
+                    onClick={closeOffcanvas}
+                    className="nav-link"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    Home
+                  </Link>
                 </li>
-              <li class="navbar-nav mr-auto nav-item nav-link">
-                <Link to="/contact" style={{ textDecoration: "none", color: "black" }}>Contact</Link>
-              </li>
+                <li className="nav-item">
+                  <Link
+                    to="/skills"
+                    onClick={closeOffcanvas}
+                    className="nav-link"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    Skills
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    to="/github"
+                    onClick={closeOffcanvas}
+                    className="nav-link"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    Website Info
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    to="/contact"
+                    onClick={closeOffcanvas}
+                    className="nav-link"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
